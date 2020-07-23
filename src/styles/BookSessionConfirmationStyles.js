@@ -1,0 +1,120 @@
+import { StyleSheet } from 'react-native';
+import {
+  COLOR_GREY, COLOR_BLUE, COLOR_WHITE,
+} from './common';
+import { HelveticaLight } from '../constants/fontConstants';
+
+export default StyleSheet.create({
+  container: {
+    margin: 10,
+    width: '96%',
+    flex: 1,
+    justifyContent: 'space-between',
+    marginBottom: 0,
+  },
+  containerPaddingTop: {
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    borderColor: COLOR_GREY,
+    borderWidth: 1,
+    paddingBottom: 5,
+    marginBottom: 1,
+  },
+  containerPaddingBottom: {
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    paddingTop: 7,
+    paddingLeft: 10,
+    paddingRight: 10,
+    borderColor: COLOR_GREY,
+    borderWidth: 1,
+    borderBottomWidth: 0,
+    borderTopWidth: 0,
+    flex: 5,
+  },
+  containerConfirmationButton: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderColor: COLOR_GREY,
+    borderWidth: 1,
+    borderBottomWidth: 0,
+    borderTopWidth: 0,
+    marginBottom: 15,
+  },
+  bioImage: {
+    borderRadius: 50,
+    width: 100,
+    height: 100,
+  },
+  bioImageContainer: {
+    marginTop: 5,
+    borderRadius: 50,
+    borderColor: COLOR_GREY,
+    borderWidth: 2,
+    backgroundColor: COLOR_GREY,
+  },
+  bioName: {
+    fontWeight: '600',
+    color: 'black',
+    marginTop: 20,
+    fontFamily: HelveticaLight,
+  },
+  bioRating: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 15,
+  },
+  bioRatingNumber: {
+    fontWeight: '600',
+    marginLeft: 3,
+    fontFamily: HelveticaLight,
+  },
+  confirmationBlockForText: {
+    flexDirection: 'row',
+  },
+  infoConfirmation: {
+    fontWeight: '400',
+    fontFamily: HelveticaLight,
+    color: '#141414',
+    width: 50,
+  },
+  infoConfirmationValue: {
+    fontWeight: '400',
+    fontFamily: HelveticaLight,
+    color: '#484848',
+    width: '85%',
+  },
+  infoConfirmationTitle: {
+    marginBottom: 20,
+    marginTop: 15,
+    textAlign: 'center',
+    fontWeight: '200',
+    width: '100%',
+    fontFamily: HelveticaLight,
+  },
+  congratulation: {
+    width: '100%',
+    textAlign: 'center',
+    fontSize: 17,
+    fontFamily: HelveticaLight,
+    marginTop: 10,
+  },
+  confirmationButton: {
+    height: 55,
+    backgroundColor: COLOR_BLUE,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 5,
+    marginLeft: 5,
+    paddingHorizontal: 20,
+    flex: 1,
+  },
+  bookConfirmationText: {
+    fontSize: 20,
+    color: COLOR_WHITE,
+    fontWeight: '900',
+    fontFamily: HelveticaLight,
+  },
+});

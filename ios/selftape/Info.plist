@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Selftape</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.7</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>355</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>60826f202ef49c1b001cf19222e4b8a930e0362d</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<string>true</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>firebasestorage.googleapis.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This is a Rect Native issue. You won't see us asking for this permission.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>We seem to need this permission because of a React Native issue, but we'll never ask for it.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This is a Rect Native issue. You won't see us asking for this permission.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Calendar is required for booking a session.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Need upload users sides when book session with practitioner.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location is required for booking a session.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is required for booking a session.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>This is a Rect Native issue. You won't see us asking for this permission.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>When user has sides photo in library neet take it.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>When user has sides photo in library neet take it.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>This is a Rect Native issue. You won't see us asking for this permission.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OCR-A-Regular.ttf</string>
+		<string>SukhumvitSet-Bold.ttf</string>
+		<string>Helvetica-Light.ttf</string>
+		<string>ER-Bukinist-Mac-Bold.ttf</string>
+		<string>Baskerville-Italic.ttf</string>
+		<string>Avenir-Light.ttf</string>
+		<string>Abril-Fatface.ttf</string>
+		<string>AntDesign.ttf</string>
+		<string>Entypo.ttf</string>
+		<string>EvilIcons.ttf</string>
+		<string>Feather.ttf</string>
+		<string>FontAwesome.ttf</string>
+		<string>FontAwesome5_Brands.ttf</string>
+		<string>FontAwesome5_Regular.ttf</string>
+		<string>FontAwesome5_Solid.ttf</string>
+		<string>Foundation.ttf</string>
+		<string>Ionicons.ttf</string>
+		<string>MaterialCommunityIcons.ttf</string>
+		<string>MaterialIcons.ttf</string>
+		<string>Octicons.ttf</string>
+		<string>SimpleLineIcons.ttf</string>
+		<string>Zocial.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

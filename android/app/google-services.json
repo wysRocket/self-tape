@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "167451356712",
+    "firebase_url": "https://selftape-ef381.firebaseio.com",
+    "project_id": "selftape-ef381",
+    "storage_bucket": "selftape-ef381.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167451356712:android:643d0c9cb931917f",
+        "android_client_info": {
+          "package_name": "com.selftape"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167451356712-8bosc82gas0vot7akomf8gr77c4p9f2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHfCRFr34-w6z_EXW-tZU6A32VZ3E9vts"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

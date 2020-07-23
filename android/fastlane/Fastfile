@@ -1,0 +1,83 @@
+# More documentation about how to customize your build
+# can be found here:
+# https://docs.fastlane.tools
+fastlane_version "2.68.0"
+
+# This value helps us track success metrics for Fastfiles
+# we automatically generate. Feel free to remove this line
+# once you get things running smoothly!
+
+default_platform :android
+changelog = prompt(text: "Enter release notes")
+# increment_build_number
+platform :android do
+  desc "Submit a new Beta Build to Crashlytics Beta"
+
+  lane :beta do
+    gradle(
+      task: "clean assembleRelease"
+    )
+
+    crashlytics(
+      notes: changelog,
+      api_token: "60826f202ef49c1b001cf19222e4b8a930e0362d",
+      build_secret: "d67b0d529d1ab9ce3b453db056901d8dc9e6cca31dc9356d66fc98f90fe7a8cf",
+      notifications: true,
+      emails: "
+        mbarashkov@gmail.com,
+        3rywoHka@gmail.com,
+        kitia007@ya.ru,
+        olegbabiy.ob@gmail.com,
+        jmalmccree@gmail.com,
+        jason@selftape.com,
+        robert.s.rice@gmail.com,
+        g.bates1991@gmail.com,
+        jonkarp01@gmail.com, 
+        brickpatrick7@gmail.com,
+        dgroves7@gmail.com,
+        johnnyvallone@yahoo.com,
+        micheleproduces@gmail.com,
+        gregoryz@outlook.com,
+        stevie.a.lopez@gmail.com,
+        rachel@foxonstocks.com,
+        bbcarlson@mac.com,
+        filipevallecosta@gmail.com,
+        Adriana.deg@gmail.com,
+        carlton.byrd@gmail.com,
+        cedricmsanders@gmail.com,
+        wtredavis@gmail.com,
+        ayindehowell@gmail.com,
+        nagadish@gmail.com,
+        filipe@saudadetheatre.org,
+        kylavgarcia@gmail.com,
+        hatianactor@gmail.com,
+        powelloflove@gmail.com,
+        allierivera310@gmail.com,
+        chelsey.l.goldsmith@gmail.com,
+        yifenlow@yahoo.com,
+        nandmahasuwan@gmail.com,
+        karissamarston1@gmail.com,
+        ancavette@gmail.com,
+        ybnormaall@icloud.com,
+        znycum@gmail.com,
+        james.w_stanley3@yahoo.com,
+        info@whitneyzanardi.com,
+        lillygkam@gmail.com,
+      "
+    )
+  end
+
+  lane :internal do
+    gradle(
+      task: "clean assemble"
+    )
+
+    crashlytics(
+      notes: changelog,
+      api_token: "60826f202ef49c1b001cf19222e4b8a930e0362d",
+      build_secret: "d67b0d529d1ab9ce3b453db056901d8dc9e6cca31dc9356d66fc98f90fe7a8cf",
+      notifications: true,
+      groups: 'internal'
+    )
+  end
+end

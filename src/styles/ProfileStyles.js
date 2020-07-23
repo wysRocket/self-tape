@@ -1,0 +1,171 @@
+import { StyleSheet } from 'react-native';
+import {
+  COLOR_GREY_F0F0F0, COLOR_GREY, COLOR_WHITE, COLOR_BLUE,
+} from './common';
+import { HelveticaLight } from '../constants/fontConstants';
+
+export default StyleSheet.create({
+  containerScroll: {
+    backgroundColor: COLOR_GREY_F0F0F0,
+    width: '100%',
+  },
+  container: {
+    backgroundColor: COLOR_GREY_F0F0F0,
+    width: '100%',
+    position: 'relative',
+  },
+  ImageBackStyles: {
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    width: '100%',
+    height: 80,
+  },
+  containerTop: {
+    margin: 20,
+    paddingTop: 37,
+    backgroundColor: COLOR_WHITE,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    marginTop: -20,
+    borderRadius: 10,
+    paddingBottom: 5,
+  },
+  containerInfo: {
+    margin: 20,
+    marginTop: 0,
+    paddingBottom: 5,
+    padding: 15,
+    backgroundColor: COLOR_WHITE,
+    borderRadius: 10,
+  },
+  containerAdditionalMenu: {
+    margin: 20,
+    marginTop: 0,
+    paddingLeft: 15,
+    paddingRight: 15,
+    backgroundColor: COLOR_WHITE,
+    borderRadius: 10,
+  },
+  profileAvatar: {
+    width: 80,
+    height: 80,
+    borderRadius: 80 / 2,
+  },
+  profileAvatarContainer: {
+    borderRadius: 80 / 2,
+    borderColor: COLOR_GREY,
+    backgroundColor: COLOR_GREY,
+    borderWidth: 2,
+  },
+  profileAvatarWrapper: {
+    position: 'absolute',
+    top: 18,
+    alignItems: 'center',
+    left: 0,
+    right: 0,
+    bottom: 0,
+  },
+  profileEdit: {
+    position: 'absolute',
+    right: 20,
+    top: 40,
+    margin: 3,
+    width: 30,
+    height: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  profileEditIco: {
+    width: 20,
+    height: 20,
+  },
+  profileUserName: {
+    marginTop: 5,
+    color: '#000',
+    fontWeight: '600',
+    fontSize: 16,
+    fontFamily: HelveticaLight,
+    marginBottom: 4,
+  },
+  containerInfoItem: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    marginBottom: 10,
+    width: '95%',
+  },
+  containerInfoItemImagePhone: {
+    marginRight: 15,
+    width: 20,
+    height: 20,
+    marginLeft: 4,
+  },
+  containerInfoItemImage: {
+    marginRight: 15,
+    width: 26,
+    height: 26,
+  },
+  containerInfoItemImageLocation: {
+    marginRight: 14,
+    width: 24,
+    height: 24,
+  },
+  containerInfoItemEmail: {
+    color: COLOR_BLUE,
+    fontFamily: HelveticaLight,
+    width: '95%',
+  },
+  containerInfoItemPhone: {
+    color: '#929292',
+    fontFamily: HelveticaLight,
+    width: '95%',
+  },
+  containerInfoItemAddress: {
+    color: '#929292',
+    fontFamily: HelveticaLight,
+    width: '95%',
+  },
+  containerAdditionalMenuItem: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    width: '99%',
+    borderColor: COLOR_GREY,
+    paddingTop: 10,
+    paddingBottom: 10,
+    borderBottomWidth: 1,
+  },
+  containerAdditionalMenuItemLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  containerAdditionalMenuTitle: {
+    marginLeft: 7,
+    fontSize: 16,
+    fontFamily: HelveticaLight,
+    fontWeight: '400',
+  },
+  containerAdditionalMenuAuditionImage: {
+    marginTop: 5,
+  },
+  additionalInfoImage: {
+    marginTop: 4,
+    width: 20,
+    height: 20,
+  },
+  additionalInfoImageCamera: {
+    tintColor: '#000',
+    width: 24,
+    height: 24,
+    marginLeft: -2,
+    marginTop: -1,
+  },
+  additionalInfoImageNormal: {
+    width: 20,
+    height: 20,
+  },
+});
